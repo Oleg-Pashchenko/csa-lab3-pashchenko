@@ -17,7 +17,7 @@ OPCODES_IMPLS = {
     Opcode.DEC: lambda a, b: a - 1,
     Opcode.DIV: lambda a, b: a // b,
     Opcode.MOD: lambda a, b: a % b,
-    Opcode.TEST: lambda a, b: a & b
+    Opcode.TEST: lambda a, b: a & b,
 }
 
 
