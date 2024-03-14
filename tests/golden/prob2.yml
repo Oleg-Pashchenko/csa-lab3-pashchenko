@@ -34,8 +34,7 @@ source_code: |-
         HLT
 stdin: |
 
-stdout: |-
-  =========================
+stdout: |
 
 out_code_readable: |-
   {

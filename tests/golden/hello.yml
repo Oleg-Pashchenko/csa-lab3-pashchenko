@@ -18,7 +18,6 @@ source_code: |-
 stdin: |
 
 stdout: |-
-  =========================
   Port 1: 'hello world!'
 
 out_code_readable: |-
