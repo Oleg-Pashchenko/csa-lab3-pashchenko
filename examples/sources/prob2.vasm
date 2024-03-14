@@ -1,0 +1,33 @@
+section .text
+.start:
+    MOV r1, 0
+    MOV r2, 1
+    MOV r3, 1
+    MOV r4, 0
+
+    MOV r10, 0
+    MOV r11, 4000000
+    MOV r12, 2
+    MOV r9, 0
+    .LOOP:
+        MOV r1, r2
+        MOV r2, r3
+        ADD r3, r1
+        CMP r2, r11
+        JG .EXIT
+
+        MOV r4, r2
+        MOD r4, r12
+        CMP r4, r9
+        JE .INC
+
+
+        JMP .LOOP
+
+    .INC:
+        ADD r10, r2
+        JMP .LOOP
+
+
+    .EXIT:
+        HLT
