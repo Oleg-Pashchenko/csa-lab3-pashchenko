@@ -15,6 +15,7 @@ stdin: |-
   CatCatCat
 
 stdout: |-
+  =========================
   Port 1: 'CatCatCat'
 
 

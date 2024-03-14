@@ -25,6 +25,7 @@ def test_bar(golden, caplog):
 
         with contextlib.redirect_stdout(io.StringIO()) as stdout:
             perform_translator(golden["source_code"], target_file)
+            print("=" * 25)
             code_dict = json.load(open(target_file, encoding="utf-8"))
             computer(code_dict, input_token)
 
@@ -32,4 +33,5 @@ def test_bar(golden, caplog):
             human_readable = file.read()
 
         assert human_readable.rstrip("\n") == golden.out["out_code_readable"]
+        assert stdout.getvalue().rstrip("\n") == golden.out["stdout"]
         assert caplog.text.rstrip("\n") == golden.out["out_log"]

@@ -45,6 +45,7 @@ source_code: |-
 stdin: |-
   Hubert Blaine Wolfeschlegelsteinhausenbergerdorff Sr.
 stdout: |-
+  =========================
   Port 1: 'What is your name?
   Hello Hubert Blaine Wolfeschlegelsteinhausenbergerdorff Sr.'
 
