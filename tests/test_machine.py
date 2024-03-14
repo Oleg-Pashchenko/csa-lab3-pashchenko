@@ -34,4 +34,4 @@ def test_bar(golden, caplog):
 
         assert human_readable.rstrip("\n") == golden.out["out_code_readable"]
         assert stdout.getvalue().rstrip("\n") == golden.out["stdout"]
-        assert caplog.text.rstrip("\n").golden.out["out_log"] == golden.out["out_log"]
+        assert caplog.text.rstrip("\n") == golden.out["out_log"]
